@@ -1,0 +1,37 @@
+services:
+
+  a:
+    build: .
+    hostname: A
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    networks:
+      - app-network
+
+  b:
+    build: .
+    hostname: B
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    networks:
+      - app-network
+
+  c:
+    build: .
+    hostname: C
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    networks:
+      - app-network
+
+  d:
+    build: .
+    hostname: D
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
