@@ -26,6 +26,8 @@ Um die Simulationen durchzuführen:
 - den Befehl "docker-compose up --build" ausführen, dadurch werden 4 Docker Kontainer mit den nötigen PostgreSQL und RMQ Verbindungen gebildet, sie fangen sofort an die Belge zu bearbeiten und in PostgreSQL zu speichern.
 - MSb kann auch nativ in Java ausgeführt werden, dafür müssen jedoch die Settings in application.properties entsprechend geändert werden. Es kann dafür nach den Kommentare in Quellcode orientiert werden.
 
+- bei var2 muss zusätzlich der zs (Zaehlerservice) auch ausgeführt werden (kein Docker, sondern native Java-Ausführung wie bei der MSA)
+
 # -------------------------------------------------------------------------------------------------
 
 Um batch-insert zu testen, kann der Variabel "groupSize" in der Datei var0\batch-insert\msb\src\main\java\HKR\MSB\controller\BelegListener.java entsprechend angepasst werden.
