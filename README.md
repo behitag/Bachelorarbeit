@@ -28,7 +28,7 @@ Um die Simulationen durchzuführen:
 
 # -------------------------------------------------------------------------------------------------
 
-Um batch-insert zu testen, kann der Variabel "groupSize" in der Datei var0\REST-API\msb\src\main\java\HKR\MSB\controller\BelegListener.java entsprechend angepasst werden.
+Um batch-insert zu testen, kann der Variabel "groupSize" in der Datei var0\batch-insert\msb\src\main\java\HKR\MSB\controller\BelegListener.java entsprechend angepasst werden.
 
 
 
